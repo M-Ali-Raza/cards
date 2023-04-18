@@ -16,94 +16,6 @@ body{
     width: inherit;
     text-align: center;
 }
-.container{
-    display: grid;
-    grid-template-rows: repeat(2,1fr);
-    grid-template-columns: repeat(3,0.18fr);
-    gap: 2rem 0rem;
-    justify-content: center;
-    position: relative;
-    width: inherit;
-}
-.cards{
-    border-radius: 10px;
-    height: 210px;
-    padding: 10px 0px;
-    width: 190px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    background-color: white;
-    outline: transparent;
-    transition: all 1s linear 0s;
-}
-.card2{
-    position: absolute;
-    left: 559.5px;
-    animation: left1 1s linear 0s;
-}
-.card3{
-    position: absolute;
-    left: 805.5px;
-    animation: left2 2s linear 0s;
-}
-.card4{
-    position: absolute;
-    right: 862.5px;
-    bottom: 0px;
-    z-index: 2;
-    animation: right1 2s linear 0s;
-}
-.card5{
-    position: absolute;
-    right: 616.5px;
-    bottom: 0px;
-    z-index: 1;
-    animation: right2 1s linear 0s;
-}
-.card6{
-    position: absolute;
-    right: 370.5px;
-    bottom: 0px;
-}
-.cards span{
-    color: rgb(172, 22, 172);
-}
-.card-name{
-    font-size: 1em;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    line-height: 18px;
-}
-/* p{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 90%;
-    font-size: 0.8em;
-    line-height: 17px;
-} */
-/* .btn{
-    padding: 6px 11px;
-    color: white;
-    background-color: rgb(172, 22, 172);
-    border-radius: 7px;
-    font-size: 0.8em;
-    transition: all 0.5s ease-out 0s;
-} */
-.cards:hover{
-    outline: 1px solid rgb(172, 22, 172);
-}
-/* .btn:hover{
-    background-color: white;
-    color: rgb(172, 22, 172);
-    outline: 1px solid rgb(172, 22, 172);
-} */
 .page{
     display: flex;
     justify-content: center;
@@ -196,22 +108,22 @@ input[type="radio"]:hover::before{
     background-size: 100%;
 }
 #soft::before{
-    background-image: url(software.png);
+    background-image: url(img/software.png);
 }
 #cart::before{
-    background-image: url(ecommerce.png);
+    background-image: url(img/ecommerce.png);
 }
 #web::before{
-    background-image: url(web.png);
+    background-image: url(img/web.png);
 }
 #mobile::before{
-    background-image: url(mobile.png);
+    background-image: url(img/mobile.png);
 }
 #ui::before{
-    background-image: url(ui.webp);
+    background-image: url(img/ui.webp);
 }
 #support::before{
-    background-image: url(support.png);
+    background-image: url(img/support.png);
 }
 .item{
     height: 72vh;
@@ -357,26 +269,6 @@ input[type="radio"]:hover::before{
         position: relative;
         transition: all 0.5s linear 0s;
     }
-    .image-mini{
-        width: 100%;
-        height: inherit;
-    }
-    .bio-mini{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: inherit;
-        color: white;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        font-family: 'Poppins', sans-serif;
-        text-align: center;
-        font-weight: bolder;
-    }
     .item-name-mini{
         font-size: 6vw;
         line-height: 7vw;
@@ -385,100 +277,5 @@ input[type="radio"]:hover::before{
     .item-detail-mini{
         font-size: 2.5vw;
         width: 80%;
-    }
-}
-@keyframes left1{
-    0%{
-        left: 314.5px;
-    }
-    100%{
-        left: 559.5px;
-    }
-}
-@keyframes left2{
-    0%{
-        left: 314.5px;
-    }
-    100%{
-        left: 805.5px;
-    }
-}
-@keyframes right1{
-    0%{
-        right: 370.5px;
-    }
-    100%{
-        right: 862.5px;
-    }
-}
-@keyframes right2{
-    0%{
-        right: 370.5px;
-    }
-    100%{
-        right: 616.5px;
-    }
-}
-@media only screen and (max-width: 768px){
-    .container{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .cards{
-        position: static;
-    }
-    .card1{
-        position: absolute;
-        left: 37.6%;
-        top: 0;
-        animation: left 1s linear 0s;
-    }
-    .card2{
-        position: absolute;
-        left: 37.6%;
-        top: 242px;
-        animation: right 1s linear 0s;
-    }
-    .card3{
-        position: absolute;
-        left: 37.6%;
-        top: 484px;
-        animation: left 1s linear 0s;
-    }
-    .card4{
-        position: absolute;
-        left: 37.6%;
-        top: 726px;
-        animation: right 1s linear 0s;
-    }
-    .card5{
-        position: absolute;
-        left: 37.6%;
-        top: 968px;
-        animation: left 1s linear 0s;
-    }
-    .card6{
-        position: absolute;
-        left: 37.6%;
-        top: 1210px;
-        animation: right 1s linear 0s;
-    }
-}
-@keyframes left{
-    0%{
-        left: -190px;
-    }
-    100%{
-        left: 237px;
-    }
-}
-@keyframes right{
-    0%{
-        left: 597px;
-    }
-    100%{
-        left: 237px;
     }
 }
